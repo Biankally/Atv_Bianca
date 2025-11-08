@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+//FUNÇÃO PARA ADICIONAR UM PACIENTE
 paciente adicionar_paciente(int id, const char* nome) {
     paciente paciente;
     paciente.id = id;
@@ -10,7 +10,7 @@ paciente adicionar_paciente(int id, const char* nome) {
     return paciente;
 
 }
-
+//FUNÇÃO PARA CRIAR UMA FILA
 Elemento* criar_fila() {
 
     Fila* fila = (Fila*) malloc(sizeof(Fila));
@@ -25,6 +25,7 @@ Elemento* criar_fila() {
     return fila;
 }
 
+//FUNÇÃO PARA VERIFICAR SE A FILA ESTÁ VAZIA
 int lista_vazia(Fila* fila) {
     return fila->tamanho == 0;
 }
@@ -89,7 +90,7 @@ int tamanho_fila(Fila* fila) {
 }
 
 //FUNÇÃO PARA IMPRIMIR OS DADOS DE UM PACIENTE
-void printpaciente(paciente paciente) {
+void print_paciente(paciente paciente) {
     printf("ID: %d, Nome: %s\n", paciente.id, paciente.nome);
 }
 

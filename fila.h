@@ -18,6 +18,9 @@ typedef struct fila{
 } Fila;
 
 
-elemento* criar_fila();
-void printpaciente(paciente c);
+Elemento* criar_fila();
+int lista_vazia(Fila* fila);
+void liberar_fila(Fila* fila);
+void enfileirar(Fila* fila, paciente dados);
+void print_paciente(paciente c);
 paciente adicionar_paciente(int id, const char* nome);
